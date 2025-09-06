@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zeenos Accounts — Greenville</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <style>
+    :root{
+      --bg:#0b0b0f; --panel:#13131a; --panel2:#171725; --border:#262637; 
+      --purple:#a855f7; --purple-2:#7c3aed; --text:#e6e6f0; --muted:#b6b6c8; --accent:#c4b5fd;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1200px 600px at 80% -10%, #2f2166 0%, transparent 50%),var(--bg);color:var(--text)}
+    a{text-decoration:none;color:inherit}
+    /* Header */
+    header{position:fixed;inset:0 0 auto 0;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;background:rgba(11,11,15,.75);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:40}
+    .logo{font-weight:800;font-size:22px;letter-spacing:.5px}
+    .logo span{color:var(--purple)}
+    nav a{margin-left:28px;color:var(--text);opacity:.9;transition:.25s}
+    nav a:hover{color:var(--purple)}
+    /* Sections */
+    section{max-width:1200px;margin:0 auto;padding:120px 24px}
+    .hero{padding-top:140px;text-align:center}
+    .badge{display:inline-flex;gap:8px;align-items:center;background:#1a1628;border:1px solid #2d2550;color:var(--accent);padding:8px 14px;border-radius:999px;font-weight:600;margin-bottom:14px}
+    h1{font-size:44px;line-height:1.05;margin:10px 0 12px}
+    .sub{color:var(--muted);max-width:760px;margin-inline:auto}
+    .cta{margin-top:26px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:12px;font-weight:700;transition:transform .25s,box-shadow .25s,background .25s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--purple);color:white;box-shadow:0 10px 30px rgba(168,85,247,.25)}
+    .btn-ghost{border:2px solid var(--purple);color:var(--purple);background:transparent}
+    /* Grid */
+    .grid{display:grid;gap:22px}
+    @media(min-width:800px){.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    .card{background:linear-gradient(180deg,#141421,#101018);border:1px solid var(--border);border-radius:18px;padding:26px;transition:box-shadow .3s,transform .3s}
+    .card:hover{box-shadow:0 0 0 1px #3b2c70, 0 25px 60px rgba(0,0,0,.45), 0 0 40px rgba(168,85,247,.15);transform:translateY(-4px)}
+    .card h3{font-size:20px;margin-bottom:6px}
+    .price{font-size:38px;font-weight:800;color:var(--purple);margin:6px 0}
+    .per{font-size:14px;color:var(--muted)}
+    ul.feats{list-style:none;margin-top:14px;color:#c9c9d9}
+    ul.feats li{padding:6px 0;display:flex;gap:10px;align-items:flex-start}
+    ul.feats li .dot{color:var(--purple)}
+    .pill{display:inline-block;background:#1e1b2e;border:1px solid #342a5d;color:#dcd5ff;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;margin-bottom:14px}
+    .popular{border-color:#5d42a8;box-shadow:0 0 0 1px #5d42a8;}
+    /* Accounts section */
+    .acct-card{position:relative;overflow:hidden}
+    .thumb{height:140px;border-radius:12px;background:
+      radial-gradient(200px 90px at 80% 10%, #4c2fa8 0%, transparent 60%),
+      linear-gradient(135deg,#191825,#0f0f17);border:1px solid var(--border);margin-bottom:14px}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+    .tag{background:#171725;border:1px solid #2a2a3b;color:#cfcfe8;padding:4px 10px;border-radius:999px;font-size:12px}
+    /* FAQ */
+    details{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:14px 18px}
+    details+details{margin-top:12px}
+    summary{cursor:pointer;font-weight:700}
+    summary::-webkit-details-marker{display:none}
+    .faq{max-width:900px}
+    /* Footer */
+    footer{border-top:1px solid var(--border);background:#0b0b10;text-align:center;padding:46px 20px;color:var(--muted)}
+    /* Anim */
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s, transform .6s}
+    .reveal.show{opacity:1;transform:translateY(0)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Zeenos <span>Accounts</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#accounts">Accounts</a>
+      <a href="#bundles">Bundles</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://discord.gg/4P2P2heYt4" target="_blank">Discord</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="badge">🛒 Premium Greenville Accounts</div>
+    <h1>Zeenos Accounts — Buy Ready Greenville Alts</h1>
+    <p class="sub">Pre-built Roblox Greenville accounts with in-game cash, vehicles, gamepasses and progress. <br/>All purchases handled safely via Discord.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#accounts">Browse Accounts</a>
+      <a class="btn btn-ghost" href="https://discord.gg/4P2P2heYt4" target="_blank">💬 Buy on Discord</a>
+    </div>
+  </section>
+
+  <!-- FEATURE HIGHLIGHTS -->
+  <section class="reveal">
+    <div class="grid grid-3">
+      <div class="card">
+        <span class="pill">✅ Verified Delivery</span>
+        <h3>Instant Handover</h3>
+        <p class="sub">We transfer account credentials securely via Discord tickets after purchase confirmation.</p>
+      </div>
+      <div class="card">
+        <span class="pill">🛡️ Safe & Private</span>
+        <h3>Ticket Support</h3>
+        <p class="sub">Private ticket channel for your order, questions, and after-sale support.</p>
+      </div>
+      <div class="card">
+        <span class="pill">⭐ Custom Orders</span>
+        <h3>We Source for You</h3>
+        <p class="sub">Looking for certain cars or balances? Request a custom account in Discord.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCOUNTS CATALOG -->
+  <section id="accounts" class="reveal">
+    <h2 style="text-align:center;margin-bottom:18px;color:var(--purple)">Available Accounts</h2>
+    <p class="sub" style="text-align:center;margin-bottom:24px">Pick a tier below. Click “Buy on Discord” to open a ticket and reserve the account.</p>
+
+    <div class="grid grid-3">
+      <!-- Starter -->
+      <div class="card acct-card">
+        <div class="thumb"></div>
+        <h3>Starter Alt 🚗</h3>
+        <div class="meta">
+          <span class="tag">£2.50</span>
+          <span class="tag">2009-2010 account</span>
+        </div>
+        <ul class="feats">
+          <li><span class="dot">•</span> New email & password set for you</li>
+          <li><span class="dot">•</span> Quick delivery</li>
+        </ul>
+        <div class="cta" style="justify-content:flex-start;margin-top:14px">
+          <a class="btn btn-primary" href="https://discord.gg/4P2P2heYt4" target="_blank">Buy on Discord</a>
+        </div>
+      </div>
+
+      <!-- Elite -->
+      <div class="card acct-card popular">
+        <div class="thumb"></div>
+        <h3>Elite Account 🏁</h3>
+        <div class="meta">
+          <span class="tag">£5</span>
+          <span class="tag">1m cash</span>
+        </div>
+        <ul class="feats">
+          <li><span class="dot">•</span> Set to user you want</li>
+          <li><span class="dot">•</span> Hours Delivery because of username</li>
+        </ul>
+        <div class="cta" style="justify-content:flex-start;margin-top:14px">
+          <a class="btn btn-primary" href="https://discord.gg/4P2P2heYt4" target="_blank">Buy on Discord</a>
+        </div>
+      </div>
+
+      <!-- Legend -->
+      <div class="card acct-card">
+        <div class="thumb"></div>
+        <h3>Legend Collection 👑</h3>
+        <div class="meta">
+          <span class="tag">£8</span>
+          <span class="tag">1.5m cash</span>
+        </div>
+        <ul class="feats">
+          <li><span class="dot">•</span> Username chosen or not</li>
+          <li><span class="dot">•</span> Faster delivery if you don't want a user.</li>
+        </ul>
+        <div class="cta" style="justify-content:flex-start;margin-top:14px">
+          <a class="btn btn-primary" href="https://discord.gg/4P2P2heYt4" target="_blank">Buy on Discord</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUNDLES / PRICING -->
+  <section id="bundles" class="reveal">
+    <h2 style="text-align:center;margin-bottom:18px;color:var(--purple)">Bundles & Deals</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <span class="pill">Popular</span>
+        <h3>Monthly Plan 👤</h3>
+        <div class="price">£5 <span class="per">/month (account rotation)</span></div>
+        <ul class="feats">
+          <li><span class="dot">•</span> Access to new stock first</li>
+          <li><span class="dot">•</span> Basic swap eligibility</li>
+          <li><span class="dot">•</span> Ticket priority</li>
+        </ul>
+        <div class="cta" style="justify-content:flex-start;margin-top:14px">
+          <a class="btn btn-ghost" href="https://discord.gg/4P2P2heYt4" target="_blank">Get Monthly</a>
+        </div>
+      </div>
+
+      <div class="card popular">
+        <span class="pill">Best Value</span>
+        <h3>Yearly Plan 💎</h3>
+        <div class="price">£10 <span class="per">/year (VIP role)</span></div>
+        <ul class="feats">
+          <li><span class="dot">•</span> First access to rare accounts</li>
+          <li><span class="dot">•</span> 1 custom sourcing request</li>
+          <li><span class="dot">•</span> Premium support</li>
+        </ul>
+        <div class="cta" style="justify-content:flex-start;margin-top:14px">
+          <a class="btn btn-primary" href="https://discord.gg/4P2P2heYt4" target="_blank">Get Yearly</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="pill">Add-On</span>
+        <h3>Custom Order 🧰</h3>
+        <div class="price">£— <span class="per">quote in ticket</span></div>
+        <ul class="feats">
+          <li><span class="dot">•</span> Specific balance & cars</li>
+          <li><span class="dot">•</span> Delivery window choice</li>
+          <li><span class="dot">•</span> Optional cosmetics</li>
+        </ul>
+        <div class="cta" style="justify-content:flex-start;margin-top:14px">
+          <a class="btn btn-ghost" href="https://discord.gg/4P2P2heYt4" target="_blank">Request Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq reveal">
+    <h2 style="text-align:center;margin-bottom:18px;color:var(--purple)">FAQ</h2>
+    <details>
+      <summary>How do I buy an account?</summary>
+      <div class="sub" style="margin-top:8px">Click any “Buy on Discord” button. Our bot opens a private ticket where we confirm stock and arrange delivery.</div>
+    </details>
+    <details>
+      <summary>Is this allowed?</summary>
+      <div class="sub" style="margin-top:8px">Some platforms restrict account transfers. Make sure your use complies with Roblox and Greenville terms. We don’t encourage breaking platform rules.</div>
+    </details>
+    <details>
+      <summary>How is delivery done?</summary>
+      <div class="sub" style="margin-top:8px">Credentials are handed over in your ticket after confirmation. We recommend immediately updating email, password, and 2FA.</div>
+    </details>
+  </section>
+
+  <footer>
+    <div class="sub">© 2025 Zeenos Accounts. Not affiliated with Roblox or Greenville. Use responsibly and within platform rules.</div>
+  </footer>
+
+  <script>
+    // Simple reveal-on-scroll
+    const onScroll = () => {
+      document.querySelectorAll('.reveal').forEach(el=>{
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight - 120) el.classList.add('show');
+      });
+    };
+    document.addEventListener('scroll', onScroll, {passive:true});
+    window.addEventListener('load', onScroll);
+  </script>
+</body>
+</html>
